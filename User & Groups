@@ -1,0 +1,34 @@
+id = This command is used to find out user & group names & numeric IDs of the current user or any other user in the server.
+whoami = To display only username of the current user.
+
+    Linux is a multiuser system, this means more than one person can interact with the same system at the same time.
+    Group is a collection of users.
+    
+    sakshi : X : 1000 : 1000 : sakshi chougule : /home/sakshi : /bin/blash
+    Here , sakshi = username
+           X = password
+           1000 = UID
+           1000 =GID
+           sakshi chougule = real name 
+           /home/sakshi = home directory
+           /bin/blash = shell program
+       
+       
+Some basic command for users and groups :
+    useradd = This command is used to create a new user
+            eg. useradd sakshi
+    cat/etc/passwd = To see the user is created or not
+    userdel = To delete the user account.
+    hostname = To display Domain name system and set the systems hostname or network information system.
+    groupadd = To create a new group.
+              eg. groupadd students
+    usermod = To make changes to an existing user or group.
+              uermod -aG [group] [user]
+              eg. if we want to add the user sakshi in the group students then use this command usermod 
+              usermod -aG students sakshi
+    id sakshi = To see the information about user and group.
+              
+    
+             
+            
+            
