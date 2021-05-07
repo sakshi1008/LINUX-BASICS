@@ -1,0 +1,9 @@
+Indtoduction -
+               Linux file system is a built-in layer of a Linux operating system. It helps to handle the data management of the storage, to arrange the files on the disk storage,
+							 and manage the file name, file size, creation date and so many other information about a file.
+							 
+							 The main difference between the windows and linux file system is to understand where the root of the file system begins. In Windows, the root begins at the drive letter, 
+							 usually C:\, which basically means it begins at the hard drive. In linux however, the root of the filesystem does not correnpond with a physical device or location, It is a
+							 logical location of simply "/".
+ 
+						
