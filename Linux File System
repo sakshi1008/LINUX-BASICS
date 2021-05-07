@@ -86,6 +86,7 @@ Bsic commands -
 	       top = To display a list of running processes and how much CPU each process uses (like task manager).
 	       uname = To print detailed information about lunix system like machine name, OS, kernel etc.
 	       history = To review the commands you have entered before.
+	       df -h = To display the memory usages for the files.
 	       su = To switching the user.
 	       sudo = This command allows a user to execute a command as another user without creating a new shell (password required).
 	       passwd = To update users password (User can only change their own password & root user can update the password for any user).
