@@ -5,5 +5,62 @@ Indtoduction -
 	       The main difference between the windows and linux file system is to understand where the root of the file system begins. In Windows, the root begins at the drive letter, 
 	       usually C:\, which basically means it begins at the hard drive. In linux however, the root of the filesystem does not correnpond with a physical device or location, It is a
 	       logical location of simply "/".
- 
-						
+               
+          
+Linux Directory Structure - 
+
+   	       1. root 
+	       		Every single file and directory start from root directory.
+			Only root user has write privilege under this directory.
+	       2. bin
+	       		Contatins binary executables.
+			Common linux commands you need to use in single-user modes are located under this directory.
+			Commands used by all users of the system are located here.
+	       3. sbin 
+	       		Just like /bin, /sbin also contain binary executables.
+			But the linux commands located under this directory are used typically by system administrator, for system maintenance purpose.
+ 	       4. etc
+	       		Contains configuration files required by all programs.
+			This also contains startup and shutdown shell scripts used to start/stop individual programs.
+	       5. dev
+	       		Contains device files.
+			These include terminal devices, usb or any device attached to the system.
+	       6. proc
+	       		Contains information about system process.
+			Contains information about running process and information about the process with that particular pid.
+			This is a virtual filesystem with text information about system resources.
+	       7. var
+	       		Variable file
+			Contains data that is changed when the system is running normally.
+			It is specific for each system.
+	       8. tmp
+	       		Temporary file
+			Directory that contains temporary files created by system and users.
+			Files under this directory are deleted when system is rebooted.
+	       9. usr
+	       		User system resources
+			Contains binaries, libraries, documentation, and source-code for second level program.
+	       10. home
+	       		Home directories for all users to store their personal files.
+	       11. boot
+	       		Contains boot loader related files.
+			This directory holds files used in booting the operating system.
+	       12. lib
+	       		System libraries
+			Contains library files that supports the binaries located under /bin and /sbin
+	       13. opt
+	       		Optional  
+			Contains add-on application from individual vendors.
+	       14. mnt
+	       		Mount directory.
+			Temporary mount directory where sysadmins can mount filesystem.
+	       15. media
+	       		Removable media devices
+			Temporary mount directory for removable devices.
+	       16. srv
+	       		Service data
+			Contains server specific services related data.
+	      
+			
+
+	        
