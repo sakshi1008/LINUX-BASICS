@@ -60,6 +60,55 @@ Linux Directory Structure -
 	       16. srv
 	       		Service data
 			Contains server specific services related data.
+			
+			
+Bsic commands -
+	       pwd = (printing working directory) To print where you are currently located within the filesystem.
+	       ls = (list) This command lists information about directories and any type of files in the working directory.
+	       ls-l = To print long listing format of files and directories.
+	       ls-a = To see hidden files
+	       ls-la = To get a full list of hidden files.
+	       ls-r = Display the content of the subdirectories recursively. 
+	       ls-i = To get Inode number of all directories and files.
+	       cd = To change the directory or To go to a directory.
+	       mkdir = To create a new directory or folder (empty directory).
+	       rmdir = To delet directory (It can only be used to delet an empty directory).
+	       rm = To delet or remove the files and directory.
+	       cp = To copy files.
+	       mv = To move files or To rename the files.
+	       cat = To display the content of file.
+	       touch = To create a file name.
+	       echo = To move some data, usually text into a file.
+	       man = To know more about a command and how to use it then use this man command.
+	       ping = To check your connection to server.
+	       head = To view the top n commands or lines.
+	       tail = To view the last n commands or limes.
+	       top = To display a list of running processes and how much CPU each process uses (like task manager).
+	       uname = To print detailed information about lunix system like machine name, OS, kernel etc.
+	       history = To review the commands you have entered before.
+	       su = To switching the user.
+	       sudo = This command allows a user to execute a command as another user without creating a new shell (password required).
+	       vi = It is a text edditor to create & new file modify a file.
+	       
+	       
+Links -
+	Link is a pointer to a file. Creating links is a kind of shortcuts to access a file. 
+	There are two types of links 1.Hard link and 2.Soft link
+	ln command used to link files.
+	
+	Hard link :
+		1.Hard links cannot be used on directories.
+		2.These links points to the same link.
+		3.These are having same i node number for the same file.
+		4.We can not decide which one is true one.
+	
+	Soft link :
+		1.Soft link also called as a symbolis link.
+		2.These can link files on different file system.
+		3.We can used on directories.
+		4.We can easily decide the true one.
+	       
+	       
 	      
 			
 
