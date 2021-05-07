@@ -88,6 +88,7 @@ Bsic commands -
 	       history = To review the commands you have entered before.
 	       su = To switching the user.
 	       sudo = This command allows a user to execute a command as another user without creating a new shell (password required).
+	       passwd = To update users password (User can only change their own password & root user can update the password for any user).
 	       vi = It is a text edditor to create & new file modify a file.
 	       
 	       
