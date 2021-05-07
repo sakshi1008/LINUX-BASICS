@@ -1,2 +1,22 @@
 SELinux stands for Security-Enhanced Linux.
 It is a security architecture for Linux system that allows administrators to have more control over who can access the system.
+ 
+ 
+Enable Disable SELinux: :
+               1.Enabled
+                        A.Active/Enforcing  - Permissions denials are both logged and enforsed.
+                        B.Permissive - Permissions denials are logged but not enforsed. In permissive mode instade of enforcing security policy, it prints warning.
+               2.Disabled 
+                        In this mode no SELinux policy is loaded.         
+                  
+          
+commands :
+          getinforce = To enforce the policy
+          sestatus = To get information about the current status of SELinux
+          setenforce = You can modify the mode SELinux is running in
+                        eg. sudo setenforce permissive
+                              sestatus
+                              getenforce
+                        eg. sudo setenforce Enforcing
+                              sestatus
+          
