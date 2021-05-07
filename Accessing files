@@ -1,1 +1,47 @@
+Permission determine the ways different users can interact with a file or directory.
+ls-l command is used to see the permission information of the file.
 
+There are 3 types of permission :
+                                1. r = read permission
+                                2. w = write permission
+                                3. x = execute permission
+                                
+structure :  
+           - --- --- ---
+           1.First character is file type field. If the first character is - , this is a regular file
+           If the first character is 'd' , it would be a directory.
+           2.After first character next set of three charaterts indicates the user or owner of the file
+           3.Middle set of three characters indicates the group of that file.
+           4.Last set of three characters indicates the other.
+           
+           
+suppose the output will be,
+        drwxr--r--. 18 root root 1008 mar 27 2020 .linux.txt
+        here, first character d means directory.
+        The owner or user root have the permissin to rwx means read, write, and execute
+        The group root have only r-- permission means only read.
+        For others have r-- permission means only read.
+        for read(4), write(2), execute(1)  Max number is 7
+        if owner, group and others have all read(4), write(2) and Execute(1) permission then all have 7 i.e. 777
+        
+        
+        
+        
+Changing file permission :
+        chmod = (To change the mode)This command is used to change the permission of the file or directory
+        eg. chmod 755
+        means change the permission for owner as (4+2+1=7) ewx, for group as (4+0+1=5) r-x and fo others as (4+0+1=5) r-x
+        i.e. drwxr-xr-x
+                
+                
+                
+Changing file ownership :  
+        chown = To change the ownership of the file or directories
+        eg. sudo chown root hello.txt
+        eg. sudo chown sakshi : students file.txt
+        (Changing the user owner requries administrative access. A regular user cannot use this command to change the user owner of a file 
+        even to give the ownership of one of the own files to another user. therefore we use sudo command ).
+        
+        
+            
+           
