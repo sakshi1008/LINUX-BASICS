@@ -7,7 +7,7 @@ There are 3 types of permission :
                                 3. x = execute permission
                                 
 structure :  
-           - --- --- ---
+           - --- --- ---.
            1.First character is file type field. If the first character is - , this is a regular file
            If the first character is 'd' , it would be a directory.
            2.After first character next set of three charaterts indicates the user or owner of the file
@@ -31,7 +31,7 @@ Changing file permission :
         chmod = (To change the mode)This command is used to change the permission of the file or directory
         eg. chmod 755
         means change the permission for owner as (4+2+1=7) ewx, for group as (4+0+1=5) r-x and fo others as (4+0+1=5) r-x
-        i.e. drwxr-xr-x
+        i.e. drwxr-xr-x.
                 
                 
                 
