@@ -1,0 +1,64 @@
+LVM :
+	LVM stands for Logical Volume Manager.
+	LVM is a method used by Linux to manage storage volumes across different physical hard disks. 
+	
+Structure of LVM :
+
+	1.Linux Partition
+	
+	2.Physical Volume - Physical block devices or other disk-like devices are used by LVM as the raw building material for higher levels of abstraction. 
+	Physical volumes are regular storage devices. LVM writes a header to the device to allocate it for management.
+	
+	3.Volume Group - LVM combines physical volumes into storage pools known as volume groups. Volume groups abstract the characteristics of the underlying devices and
+	function as a unified logical device with combined storage capacity of the component physical volumes.
+	
+	4.Logical Volume - A volume group can be sliced up into any number of logical volumes. Logical volumes are functionally equivalent to partitions on a physical disk, 
+	but with much more flexibility. Logical volumes are the primary component that users and applications will interact with.
+	
+
+LVM commands :
+
+pvcreate [devices] = To create a physical volume 
+pvdisplay = To display the physical volume
+vgcreate vgname [pv] = To create a volume group
+vgdisplay = To display the volume group
+lvcreate -n name -L [size] name = To create a logical volume
+lvdisplay = To display the logical volume 
+
+
+STEPS TO CREATE LVM :
+1.Set the flag for lvm 
+	flag set 1
+	flag to invert? lvm
+	new state [on]/[off]? on
+	
+2.Use this command 'yum install lvm2'
+
+3.Create PV(physical volume)
+	To create the  physical volume use this command
+	pvcreate /dev/vdb1/dev/vdc1
+	
+4.Create Volume group
+	To craeate volume group with name serverg use this command 
+	vgcreate serverg /dev/vdb1/dev/vdc1
+	
+5.See the volume group information 
+	To see the volume group information use this command 
+	vgdisplay serverg
+	
+6.Create logical volume 
+	To Create logical volume with name serverlv use this command 
+	lvcreate -n serverlv -L 10G serverg
+	(here -n is used for LV name and -L is used for assign a fixed size)
+	
+7.See the logical volume 
+	To display the logical volume use this command 
+	lvdisplay
+	
+	
+	
+	
+	
+
+
+	
