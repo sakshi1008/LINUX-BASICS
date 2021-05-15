@@ -2,7 +2,7 @@ Package Management :
 			Package management is a system by which software can be installed, updated, queried or removed from a filesystem.
 			At the lowest level of the Debian package management system is the 'dpkg' command.
 			This command can be tricky for novice Linux users, so the Advanced Package Tool,
-			'apt-get', a front-end program to the 'dpkg' tool, makes management of packages even easier.
+			'apt-get'/'aptitude ', a front-end program to the 'dpkg' tool, makes management of packages even easier.
 			similarly for CentOS package management 'rpm' is low level tool and 'yum' high level tool is used.
 			and for openSUSE package management 'rpm' is low level tool and 'zypper' high level tool is used.
 										
@@ -14,7 +14,18 @@ Package Management :
 				apt-get is a high-level package manager for Debian and derivatives, and provides a simple way to retrieve and install packages,
 				including dependency resolution, from multiple sources using the command line. 
 				Unlike dpkg, apt-get does not work directly with *.deb files, but with the package proper name.
-										
+			aptitude :
+				aptitude is another high-level package manager for Debian-based systems, and can be used to perform management tasks
+				(installing, upgrading, and removing packages, also handling dependency resolution automatically) in a fast and easy way. 
+				It provides the same functionality as apt-get and additional ones, such as offering access to several versions of a package.
+			rpm :
+				rpm is the package management system used by Linux Standard Base (LSB)-compliant distributions for low-level handling of packages. 
+				Just like dpkg, it can query, install, verify, upgrade, and remove packages, and is more frequently used by Fedora-based distributions, such as RHEL and CentOS.
+			yum :
+				yum adds the functionality of automatic updates and package management with dependency management to RPM-based systems.
+				As a high-level tool, like apt-get or aptitude, yum works with repositories.
+				
+			(Many of the package management commands require administrative access, so they will be prefaced with the sudo command.)						
 									
 		
 Commands :
@@ -22,4 +33,33 @@ Commands :
 	ssh is secure in the sense that it transfers the data in encrypted form between the host and the client.
 	It transfers inputs from the client to the host and relays back the output. 
 	syntax : ssh user_name@host(IP/Domain_name)
+		
+# yum list updates = To display a list of updated software and security fix.
+# yum check-update = To find out whether updates exist for packages that are already installed on my system.
+# yum update = To download and install all updates or Patch up system by applying all updates.
+$ sudo yum update --security = To apply security-related package updates .
+$ yum update {package-name-1} = To update specified packages.
+$ sudo yum update httpd = To check for and update httpd package.
+$ yum list installed = To list all installed packages.
+$ yum list installed httpd = To Find out if httpd package installed or not on the system.
+$ yum search {package-name} = To search for packages by name.
+$ yum info {pkg-1} {pkg-2} = To see detailed information about a package.
+$ yum deplist {pkg} = To show dependencies list for a package.
+# yum install {package-name-1} {package-name-2} = To install the specified packages.
+# yum downgrade {pkg} = To downgrade a package to an earlier version.
+# yum reinstall {pkg} = To reinstall a package again.
+# yum install {package-name}.{architecture} = To Install particular architecture package.
+# yum remove {package-name-1} {package-name-2} = To remove / uninstall the specified packages.
+# yum erase {package-name-1} {package-name-2} = To remove / uninstall the specified packages.
+# yum autoremove = To remove unneeded/unwanted packages/deps.
+$ yum list all = To Display the list of available packages.
+$ yum provides /etc/passwd = To display what package provides the file.
+# yum clean all = To clean yum cache.
+$ yum repolist = To list software repositories.
+# yum history = To view and use yum history.
+$ man yum (or) $ yum help = To see help about yum command.
+
+
+
+	
 										
