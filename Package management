@@ -1,0 +1,25 @@
+Package Management :
+										Package management is a system by which software can be installed, updated, queried or removed from a filesystem.
+										At the lowest level of the Debian package management system is the 'dpkg' command.
+										This command can be tricky for novice Linux users, so the Advanced Package Tool,
+										'apt-get', a front-end program to the 'dpkg' tool, makes management of packages even easier.
+										similarly for CentOS package management 'rpm' is low level tool and 'yum' high level tool is used.
+										and for openSUSE package management 'rpm' is low level tool and 'zypper' high level tool is used.
+										
+										dpkg :
+													dpkg is a low-level package manager for Debian-based systems. 
+													It can install, remove, provide information about and build *.deb packages but it can’t automatically download
+													and install their corresponding dependencies.
+										apt-get :
+													apt-get is a high-level package manager for Debian and derivatives, and provides a simple way to retrieve and install packages,
+													including dependency resolution, from multiple sources using the command line. 
+													Unlike dpkg, apt-get does not work directly with *.deb files, but with the package proper name.
+										
+		
+		
+Commands :
+					ssh = ssh stands for “Secure Shell”. It is a protocol used to securely connect to a remote server/system.
+								ssh is secure in the sense that it transfers the data in encrypted form between the host and the client.
+								It transfers inputs from the client to the host and relays back the output. 
+								syntax : ssh user_name@host(IP/Domain_name)
+										
